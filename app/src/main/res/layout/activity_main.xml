@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Your Name"
+        android:textColorHint="#C052EF"
+        android:textAlignment="center"
+        android:backgroundTint="#A2E16A"
+        android:layout_margin="16dp"
+        android:textSize="20dp"
+        android:background = "@drawable/editext"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/send_act_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C052EF"
+            app:cornerRadius = "10dp"
+            android:layout_weight="1"
+            android:text="Send Activity"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:id="@+id/send_frag_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Send Fragment"
+            app:cornerRadius = "10dp"
+            android:backgroundTint="#C052EF"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/framelayoutview"
+        />
+
+</LinearLayout>
